@@ -14,8 +14,8 @@ const server = http.createServer((req, res) => {
   if (method === 'POST' && url === '/users') {
     users.push({
       id: 1,
-      name: 'John',
-      email: 'jhon@gmail.com'
+      name: 'John Doe',
+      email: 'jhon-doe@gmail.com'
     })
     
     return res.writeHead(201).end('Criação de usuários')
